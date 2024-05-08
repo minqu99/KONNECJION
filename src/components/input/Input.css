@@ -3,7 +3,7 @@
 
 .Input {
   margin: auto;
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 0px;
   background: #ffffff;
 }
@@ -70,4 +70,16 @@
   font-style: normal;
 
   resize: none;
+}
+
+.logo-box {
+  height: 3%;
+  width: 3%;
+  padding-left: 15px;
+}
+
+.homeLogo {
+  width: 80%;
+  height: 90%;
+  object-fit: cover;
 }

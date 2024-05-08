@@ -1,8 +1,17 @@
 import "./Input.css";
+import imgLogo from "./homeLogo.png";
+import { useNavigate } from "react-router-dom";
 
 function Input() {
+  const navigate = useNavigate();
+  const goToHome = () => {
+    navigate("/");
+  };
   return (
     <div className="Input">
+      <div className="logo-box">
+        <img src={imgLogo} className="homeLogo" onClick={goToHome} />
+      </div>
       <div className="intro-logo">
         <span className="alpa-K">K</span>ONNEC
         <span className="alpa-J">J</span>ION
@@ -19,7 +28,7 @@ function Input() {
         <textarea
           className="input-text"
           type="text"
-          placeholder="텍스트를 입력해주세요."
+          placeholder="텍스트를 입력하세요."
           maxlength="500"
           // onChange={saveText}
         />
