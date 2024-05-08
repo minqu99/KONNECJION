@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Kanit:wght@900&display=swap");
+
+.Input {
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  background: #ffffff;
+}
+
+.input-explan {
+  font-family: "Gugi", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 110%;
+  /* line-height: 40px; */
+
+  margin-top: 30px;
+  margin-bottom: 35px;
+  text-align: center;
+
+  color: black;
+}
+
+.input-box {
+  width: 1000px;
+  height: 330px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #cbe9ff;
+  border-radius: 30px;
+}
+
+.input-text {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+
+  font-size: larger;
+  width: 90%;
+  height: 80%;
+  line-height: 1.5;
+}
+
+.input-text:focus {
+  outline: none;
+}
+
+.analyze-box {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.analyze {
+  /* width: 130px;
+    height: 50px; */
+
+  background: #ffffff;
+  border: 2px solid black;
+  border-radius: 15px;
+
+  font-family: "Gugi", sans-serif;
+  /* font-family: "Black Han Sans", sans-serif; */
+  font-size: 20px;
+  font-style: normal;
+
+  resize: none;
+}
