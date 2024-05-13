@@ -3,32 +3,33 @@
 
 .Input {
   margin: auto;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 0px;
   background: #ffffff;
 }
 
 .input-explan {
-  font-family: "Gugi", sans-serif;
+  /* font-family: "Gugi", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 110%;
+  font-size: 110%; */
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.1em;
   /* line-height: 40px; */
-
-  margin-top: 30px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   text-align: center;
 
   color: black;
 }
 
 .input-box {
-  width: 1000px;
-  height: 330px;
+  width: 900px;
+  height: 280px;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   background: #cbe9ff;
   border-radius: 30px;
@@ -41,9 +42,9 @@
   background-color: transparent;
   border: none;
 
-  font-size: larger;
-  width: 90%;
-  height: 80%;
+  font-size: 20px;
+  width: 800px;
+  height: 200px;
   line-height: 1.5;
 }
 
@@ -51,35 +52,42 @@
   outline: none;
 }
 
-.analyze-box {
-  margin-top: 30px;
-  text-align: center;
+.count-box {
+  position: absolute;
+  bottom: 10px;
+  right: 40px;
 }
 
-.analyze {
-  /* width: 130px;
-    height: 50px; */
+.input-count {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #5f5f5f;
+}
+
+.button-box {
+  width: 900px;
+  margin: auto;
+
+  padding-top: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  background-color: white;
+}
+
+.button-text {
+  width: 100px;
+  height: 40px;
 
   background: #ffffff;
   border: 2px solid black;
   border-radius: 15px;
 
-  font-family: "Gugi", sans-serif;
-  /* font-family: "Black Han Sans", sans-serif; */
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 20px;
   font-style: normal;
 
   resize: none;
-}
-
-.logo-box {
-  height: 3%;
-  width: 3%;
-  padding-left: 15px;
-}
-
-.homeLogo {
-  width: 80%;
-  height: 90%;
-  object-fit: cover;
 }

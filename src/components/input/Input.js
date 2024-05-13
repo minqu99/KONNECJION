@@ -1,21 +1,28 @@
-import "./Input.css";
-import imgLogo from "./homeLogo.png";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./Input.css";
+import HomeLogo from "../../common/homeLogo/HomeLogo";
+import SiteLogo from "../../common/siteLogo/SiteLogo";
+// import Button from "../../common/button/Button";
 
 function Input() {
+  let [inputCount, setInputCount] = useState(0);
+  const [text, getText] = useState("");
+
   const navigate = useNavigate();
-  const goToHome = () => {
-    navigate("/");
+  const goToResult = () => {
+    navigate("/Result-page", { state: { text } });
+  }; // navigate to result page and get userText
+
+  const onInputHandler = (e) => {
+    setInputCount(e.target.value.length); // 전각 반각 고려x
+    getText(e.target.value);
   };
+
   return (
     <div className="Input">
-      <div className="logo-box">
-        <img src={imgLogo} className="homeLogo" onClick={goToHome} />
-      </div>
-      <div className="intro-logo">
-        <span className="alpa-K">K</span>ONNEC
-        <span className="alpa-J">J</span>ION
-      </div>
+      <HomeLogo />
+      <SiteLogo />
 
       <div className="input-explan">
         <h3>
@@ -29,13 +36,20 @@ function Input() {
           className="input-text"
           type="text"
           placeholder="텍스트를 입력하세요."
-          maxlength="500"
-          // onChange={saveText}
+          maxlength="300"
+          onChange={onInputHandler}
+          value={text}
         />
+        <div className="count-box">
+          <span className="input-count">{inputCount} / 300</span>
+        </div>
       </div>
-      <div className="analyze-box">
-        <button className="analyze">분석하기</button>
+      <div className="button-box">
+        <button className="button-text" onClick={goToResult}>
+          분석하기
+        </button>
       </div>
+      {/* <Button /> */}
     </div>
   );
 }
