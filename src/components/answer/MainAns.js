@@ -2,6 +2,7 @@ import Next from "./Next";
 import BestAnswer from "./BestAnswer";
 import Finish from "./Finish";
 import UserTrans from "./UserTrans";
+import ExplainText1 from "../pages/ExplainText1";
 
 export default function MainAns(){
 
@@ -9,6 +10,7 @@ export default function MainAns(){
 
     return (
         <div>
+            <ExplainText1 />
             <UserTrans translatedText={translatedText} />
             <BestAnswer></BestAnswer>
             <Finish></Finish>
