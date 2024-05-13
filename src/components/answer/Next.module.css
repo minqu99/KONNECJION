@@ -1,0 +1,20 @@
+.next{
+    border: 2.5px solid #2E81E2;
+    width: 170px;
+    height: 60px;
+    border-radius: 25px;
+    position: relative;
+    left:42%;
+    display: block;
+    background-color: #ffffff;
+    margin-top: 30px;
+    float: left;
+  }
+.next a{
+    display: block;
+    color:#2E81E2;
+    font-size: 1.6em;
+    font-family: "Noto Sans KR", sans-serif;
+    margin-top: 10px;
+    text-decoration-line: none;
+  }
