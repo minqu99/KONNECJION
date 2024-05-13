@@ -1,5 +1,4 @@
 import "./ResultBox.css";
-import ToolTip from "./toolTip/ToolTip";
 
 export default function ResultBox() {
   return (
@@ -15,7 +14,6 @@ export default function ResultBox() {
       <div className="line">
         <div className="result-box box-light box3">
           <div className="result-title add-mark">다빈도 어휘</div>
-          <ToolTip />
         </div>
       </div>
       <div className="line">
