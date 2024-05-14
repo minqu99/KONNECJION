@@ -2,6 +2,8 @@ import TransSubmit from "./TransSubmit";
 import SameLevel from "./SameLevel";
 import TranslationText from "./TranslationText";
 import ExplainText1 from "./ExplainText1.js";
+import HomeButton from "../../common/homeLogo/HomeLogo.js"
+import SiteLogo from "../../common/siteLogo/SiteLogo.js"
 
 export default function Main(){
 
@@ -11,10 +13,12 @@ export default function Main(){
 
     return (
         <div>
+            <HomeButton />
+            <SiteLogo />
             <ExplainText1 />
             <SameLevel></SameLevel>
             <TranslationText onTextChange={handleTextChange} />
-            <TransSubmit></TransSubmit>
+            <TransSubmit />
         </div>
     );
 }

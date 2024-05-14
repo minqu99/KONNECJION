@@ -3,6 +3,8 @@ import BestAnswer from "./BestAnswer";
 import Finish from "./Finish";
 import UserTrans from "./UserTrans";
 import ExplainText1 from "../pages/ExplainText1";
+import HomeButton from "../../common/homeLogo/HomeLogo.js"
+import SiteLogo from "../../common/siteLogo/SiteLogo.js"
 
 export default function MainAns(){
 
@@ -10,6 +12,8 @@ export default function MainAns(){
 
     return (
         <div>
+            <HomeButton />
+            <SiteLogo />
             <ExplainText1 />
             <UserTrans translatedText={translatedText} />
             <BestAnswer></BestAnswer>

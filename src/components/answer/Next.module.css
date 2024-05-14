@@ -1,10 +1,10 @@
 .next{
-    border: 2.5px solid #2E81E2;
-    width: 170px;
-    height: 60px;
-    border-radius: 25px;
+    border: 2px solid #2E81E2;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
     position: relative;
-    left:42%;
+    left:46%;
     display: block;
     background-color: #ffffff;
     margin-top: 30px;
@@ -13,8 +13,9 @@
 .next a{
     display: block;
     color:#2E81E2;
-    font-size: 1.6em;
+    font-size: 20px;
     font-family: "Noto Sans KR", sans-serif;
-    margin-top: 10px;
+    margin-top: 4px;
     text-decoration-line: none;
+    text-align: center ;
   }
