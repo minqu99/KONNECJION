@@ -30,9 +30,9 @@ function Result() {
   const goToInput = () => {
     navigate("/Input");
   }; // navigate to input-page
-  // const goToTrans = () => {
-  //   navigate("/Translation");
-  // };
+  const goToTrans = () => {
+    navigate("/Translation");
+  };
 
   return (
     <div className="Result">
@@ -51,7 +51,7 @@ function Result() {
         <button className="button-text button-home" onClick={goToHome}>
           홈으로
         </button>
-        <button className="button-text button-trans">번역 연습</button>
+        <button className="button-text button-trans" onClick={goToTrans}>번역 연습</button>
       </div>
     </div>
   );
