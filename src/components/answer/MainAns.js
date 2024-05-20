@@ -10,13 +10,16 @@ export default function MainAns(){
 
     const translatedText = localStorage.getItem('translatedText') || '';
 
+
+    const deeplTrans = localStorage.getItem('translatedText') || '';
+
     return (
         <div>
             <HomeButton />
             <SiteLogo />
             <ExplainText1 />
             <UserTrans translatedText={translatedText} />
-            <BestAnswer></BestAnswer>
+            <BestAnswer deeplTrans={deeplTrans} />
             <Finish></Finish>
             <Next></Next>
         </div>

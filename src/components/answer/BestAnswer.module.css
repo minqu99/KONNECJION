@@ -10,8 +10,14 @@
 .best p{
     text-align: left;
     font-family: "Noto Sans KR", sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     position: relative;
     top:15%;
     left: 3%;
   }
+.deelptext{
+  width: 95%;
+  height:50%;
+
+  overflow: auto;
+}
