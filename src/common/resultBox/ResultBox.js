@@ -1,7 +1,7 @@
 import "./ResultBox.css";
 import ToolTip from "./toolTip/ToolTip";
 
-export default function ResultBox() {
+export default function ResultBox({ translatedText }) {
   return (
     <div>
       <div className="line">
@@ -24,6 +24,13 @@ export default function ResultBox() {
         </div>
         <div className="result-box box-dark box5">
           <div className="result-title add-mark">번역</div>
+          {translatedText && (
+            <div className="deeplTrans">
+              {translatedText.split('\n').map((line, index) => (
+                <div key={index}>{line}</div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </div>

@@ -65,3 +65,15 @@
 .add-mark {
   display: inline-block;
 }
+
+.deeplTrans{
+  margin-top: 15px;
+  margin-left: 20px;
+
+  width: 90%;
+  height: 70%;
+  overflow: auto;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
