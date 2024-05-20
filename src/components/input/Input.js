@@ -15,6 +15,7 @@ function Input() {
   }; // navigate to result page and get userText
 
   const onInputHandler = (e) => {
+    setInputCount(e.target.value.length); // 전각 반각 고려x
     setInputCount(e.target.value.length);
     getText(e.target.value);
 
@@ -24,6 +25,8 @@ function Input() {
     //   alert("일본어 문장을 입력해주세요.");
     // }
   };
+
+
 
   return (
     <div className="Input">
