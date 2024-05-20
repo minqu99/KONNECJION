@@ -15,18 +15,9 @@ function Input() {
   }; // navigate to result page and get userText
 
   const onInputHandler = (e) => {
-    setInputCount(e.target.value.length); // 전각 반각 고려x
     setInputCount(e.target.value.length);
     getText(e.target.value);
-
-    // const regex = /[a-zA-Z0-9ぁ-ゔァ-ヴー々〆〤一-龥]/;
-    // const isKor = regex.test({ text });
-    // if (isKor) {
-    //   alert("일본어 문장을 입력해주세요.");
-    // }
   };
-
-
 
   return (
     <div className="Input">
