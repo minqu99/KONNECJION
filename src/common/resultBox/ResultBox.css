@@ -65,3 +65,12 @@
 .add-mark {
   display: inline-block;
 }
+
+.lexical-level {
+  display: block;
+  margin-left: 20px;
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 90%;
+  color: #5f5f5f;
+}

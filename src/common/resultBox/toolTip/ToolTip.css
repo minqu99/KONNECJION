@@ -4,26 +4,27 @@
   margin-left: 5px;
 }
 
-.button-ico {
-  width: 20px;
-  height: 20px;
-  background-image: url(./bang.png);
-  /* background-position: center; */
-  background-size: 100% auto;
+.button-set {
+  border: 0;
+  background-color: transparent;
 }
 
-.button-set {
-  border: none;
-  /* background: transparent; */
+.button-ico {
+  background-image: url(./bang.png);
+  background-size: 100% auto;
+  width: 20px;
+  height: 20px;
+
+  cursor: pointer;
 }
 
 .ui-tooltip div[data-tooltip-id] {
   position: absolute;
-  left: -15px;
+  left: -13px;
   top: 33px;
 
-  width: 184px;
-  padding: 8px 30px 8px 8px;
+  width: 150px;
+  padding: 8px 8px 8px 8px;
 
   border: 1px solid #333;
   background: #fff;
@@ -42,4 +43,10 @@
   border-color: #333 transparent transparent #333;
   background: #fff;
   transform: rotate(45deg) translateY(-100%);
+}
+
+.span-text {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #5f5f5f;
+  font-size: 90%;
 }
