@@ -47,6 +47,8 @@
   height: 200px;
   resize: none;
   line-height: 1.5;
+
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .input-text:focus {

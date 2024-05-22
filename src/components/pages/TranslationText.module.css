@@ -11,9 +11,10 @@
   outline: none;
   resize:none;
   padding: 2.5%;
-  font-size: 1.5em;
+  font-size: 1.1em;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .translationText::placeholder{
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 0.8em;
+  font-size: 1.0em;
 }
