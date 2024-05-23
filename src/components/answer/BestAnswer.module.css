@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
 .best{
     position: relative;
     left: 10%;
@@ -20,4 +22,9 @@
   height:50%;
 
   overflow: auto;
+}
+
+.deelptext div{
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1em;
 }
