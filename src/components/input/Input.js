@@ -1,23 +1,38 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
+
 import "./Input.css";
 import HomeLogo from "../../common/homeLogo/HomeLogo";
 import SiteLogo from "../../common/siteLogo/SiteLogo";
-// import Button from "../../common/button/Button";
 
 function Input() {
   let [inputCount, setInputCount] = useState(0);
   const [text, getText] = useState("");
 
   const navigate = useNavigate();
-  const goToResult = () => {
-    navigate("/Result-page", { state: { text } });
-  }; // navigate to result page and get userText
 
   const onInputHandler = (e) => {
     setInputCount(e.target.value.length);
     getText(e.target.value);
   };
+
+  const checkCode = (e) => {
+    const kor = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
+    const element = e.target;
+    if (kor.test(element.value)) {
+      element.value = element.value.replace(kor, "");
+      Swal.fire({
+        text: "일본어 텍스트만 입력해주세요",
+        icon: "error",
+        confirmButtonText: "확인",
+      });
+    }
+  };
+
+  const goToResult = () => {
+    navigate("/Result-page", { state: { text } });
+  }; // navigate to result page and get userText
 
   return (
     <div className="Input">
@@ -38,6 +53,7 @@ function Input() {
           placeholder="텍스트를 입력하세요."
           maxlength="300"
           onChange={onInputHandler}
+          onKeyUp={checkCode}
           value={text}
         />
         <div className="count-box">

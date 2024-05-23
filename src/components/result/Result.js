@@ -3,11 +3,10 @@ import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-
 import HomeLogo from "../../common/homeLogo/HomeLogo";
 import SiteLogo from "../../common/siteLogo/SiteLogo";
 import ResultBox from "../../common/resultBox/ResultBox";
-import { translateText } from '../result/deepltrans';
+import { translateText } from "../result/deepltrans";
 
 const SetUserText = ({ text }) => {
   return (
@@ -26,13 +25,13 @@ function Result() {
   const location = useLocation();
   const userText = location.state.text;
 
-  const [translatedText, setTranslatedText] = useState(''); // 번역된 텍스트를 상태로 관리
+  const [translatedText, setTranslatedText] = useState(""); // 번역된 텍스트를 상태로 관리
   const [error, setError] = useState(null);
 
   useEffect(() => {
     const translate = async () => {
       try {
-        const result = await translateText(userText, 'KO'); // 번역할 타겟 언어를 설정 
+        const result = await translateText(userText, "KO"); // 번역할 타겟 언어를 설정
         setTranslatedText(result);
       } catch (err) {
         setError(err.message);
@@ -64,12 +63,14 @@ function Result() {
           초기화
         </button>
       </div>
-      <ResultBox translatedText={translatedText} error={error}  />
+      <ResultBox translatedText={translatedText} error={error} />
       <div className="button-box">
         <button className="button-text button-home" onClick={goToHome}>
           홈으로
         </button>
-        <button className="button-text button-trans" onClick={goToTrans}>번역 연습</button>
+        <button className="button-text button-trans" onClick={goToTrans}>
+          번역 연습
+        </button>
       </div>
     </div>
   );

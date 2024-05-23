@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./ToolTip.css";
 
-export default function ToolTip() {
+export default function ToolTip2() {
   const [visible, setVisible] = useState(false);
 
   return (
@@ -16,8 +16,7 @@ export default function ToolTip() {
       {visible && (
         <div data-tooltip-id="help">
           <span className="span-text">
-            DeepL AI에 의한 번역이
-            <br /> 자동으로 제공됩니다.
+            JLPT 단어 N1~N3의 어휘를 바탕으로 한 분석 결과입니다.
           </span>
         </div>
       )}

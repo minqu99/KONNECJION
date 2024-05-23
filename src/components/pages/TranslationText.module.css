@@ -1,20 +1,20 @@
-.translationText{
+.translationText {
   width: 75%;
-  height:220px;
-  background-color:#E2E2E2 ;
+  height: 220px;
+  background-color: #e2e2e2;
   border-radius: 25px;
   margin-top: 10px;
   margin-left: 10%;
   margin-bottom: 30px;
 
-  border:none;
+  border: none;
   outline: none;
-  resize:none;
+  resize: none;
   padding: 2.5%;
   font-size: 1.1em;
   font-family: "Noto Sans KR", sans-serif;
 }
-.translationText::placeholder{
+.translationText::placeholder {
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 1.0em;
+  font-size: 20px;
 }

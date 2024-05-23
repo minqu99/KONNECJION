@@ -1,5 +1,6 @@
 import "./ResultBox.css";
 import ToolTip from "./toolTip/ToolTip";
+import ToolTip2 from "./toolTip/ToolTip2";
 
 export default function ResultBox({ translatedText }) {
   return (
@@ -15,6 +16,7 @@ export default function ResultBox({ translatedText }) {
       <div className="line">
         <div className="result-box box-light box3">
           <div className="result-title add-mark">다빈도 어휘</div>
+          <ToolTip2 />
         </div>
       </div>
       <div className="line">
@@ -29,7 +31,7 @@ export default function ResultBox({ translatedText }) {
           <ToolTip />
           {translatedText && (
             <div className="deeplTrans">
-              {translatedText.split('\n').map((line, index) => (
+              {translatedText.split("\n").map((line, index) => (
                 <div key={index}>{line}</div>
               ))}
             </div>
