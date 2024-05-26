@@ -10,7 +10,7 @@ import { translateText } from "../result/deepltrans";
 
 const SetUserText = ({ text }) => {
   return (
-    <span className="input-text span-text">
+    <span className="input-text">
       {text.split("\n").map((txt, index) => (
         <span key={index}>
           {txt}

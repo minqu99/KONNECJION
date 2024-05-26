@@ -1,6 +1,7 @@
 import "./ResultBox.css";
 import ToolTip from "./toolTip/ToolTip";
 import ToolTip2 from "./toolTip/ToolTip2";
+import Analyze from "../../components/result/analyze/Analyze";
 
 export default function ResultBox({ translatedText }) {
   return (
@@ -17,6 +18,7 @@ export default function ResultBox({ translatedText }) {
         <div className="result-box box-light box3">
           <div className="result-title add-mark">다빈도 어휘</div>
           <ToolTip2 />
+          <Analyze />
         </div>
       </div>
       <div className="line">

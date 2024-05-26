@@ -7,11 +7,6 @@
   background: #ffffff;
 }
 
-.span-text {
-  overflow-y: scroll;
-  font-family: "Noto Sans JP", sans-serif;
-}
-
 .reset-box {
   width: 900px;
   margin: auto;
