@@ -1,10 +1,10 @@
-import styles from "./Next.module.css"
-import { Link } from "react-router-dom";
+// import styles from "./Next.module.css"
+// import { Link } from "react-router-dom";
 
-export default function Next(){
-    return (
-        <div className={styles.next}>
-            <Link to="/Translation">다음문제</Link>
-        </div>
-);
-}
+// export default function Next(){
+//     return (
+//         <div className={styles.next}>
+//             <Link to="/Translation">다음문제</Link>
+//         </div>
+// );
+// }

@@ -20,5 +20,4 @@ const analyzeText = (text) => {
       });
   });
 };
-
 export default analyzeText;
