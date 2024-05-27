@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-import Next from "./Next";
 import BestAnswer from "./BestAnswer";
 import Finish from "./Finish";
 import UserTrans from "./UserTrans";
@@ -44,7 +43,7 @@ export default function MainAns(){
             <UserTrans translatedText={userText} />
             <BestAnswer deeplTrans={deeplTrans} />
             <Finish></Finish>
-            <Next></Next>
+            {/* <Next></Next> */}
         </div>
     );
 }
